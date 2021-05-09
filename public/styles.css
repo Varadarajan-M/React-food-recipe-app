@@ -1,0 +1,72 @@
+.App {
+  font-family: poppins;
+  font-weight: 900;
+  text-align: center;
+}
+.card,
+.thumbnail-img {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+.thumbnail-img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+.ingredient-rows {
+  display: flex;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+.thumbnail-img {
+  max-width: 400px;
+  max-height: 400px;
+}
+body {
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .App {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.04);
+  }
+  .ingredient-rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 85%;
+    
+    margin-left: 8%;
+  }
+  .thumbnail-img {
+    max-width: 85%;
+    max-height: 340px;
+    margin: 1%;
+  }
+  .youtube-video {
+    max-width: 85%;
+    float: none;
+    margin-left: 8%;
+  }
+}
+
